@@ -1,0 +1,12 @@
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.DataAccessLayer\bin\Debug\netcoreapp2.2\NLog.config
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.DataAccessLayer\bin\Debug\netcoreapp2.2\Lingva.DataAccessLayer.deps.json
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.DataAccessLayer\bin\Debug\netcoreapp2.2\Lingva.DataAccessLayer.runtimeconfig.json
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.DataAccessLayer\bin\Debug\netcoreapp2.2\Lingva.DataAccessLayer.runtimeconfig.dev.json
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.DataAccessLayer\bin\Debug\netcoreapp2.2\Lingva.DataAccessLayer.dll
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.DataAccessLayer\bin\Debug\netcoreapp2.2\Lingva.DataAccessLayer.pdb
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.DataAccessLayer\obj\Debug\netcoreapp2.2\Lingva.DataAccessLayer.csprojAssemblyReference.cache
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.DataAccessLayer\obj\Debug\netcoreapp2.2\Lingva.DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.DataAccessLayer\obj\Debug\netcoreapp2.2\Lingva.DataAccessLayer.AssemblyInfoInputs.cache
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.DataAccessLayer\obj\Debug\netcoreapp2.2\Lingva.DataAccessLayer.AssemblyInfo.cs
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.DataAccessLayer\obj\Debug\netcoreapp2.2\Lingva.DataAccessLayer.dll
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.DataAccessLayer\obj\Debug\netcoreapp2.2\Lingva.DataAccessLayer.pdb

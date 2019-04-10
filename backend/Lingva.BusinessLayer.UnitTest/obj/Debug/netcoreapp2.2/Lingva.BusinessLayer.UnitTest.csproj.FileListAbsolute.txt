@@ -1,0 +1,12 @@
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.BusinessLayer.UnitTest\bin\Debug\netcoreapp2.2\NLog.config
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.BusinessLayer.UnitTest\bin\Debug\netcoreapp2.2\Lingva.BusinessLayer.UnitTest.deps.json
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.BusinessLayer.UnitTest\bin\Debug\netcoreapp2.2\Lingva.BusinessLayer.UnitTest.runtimeconfig.json
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.BusinessLayer.UnitTest\bin\Debug\netcoreapp2.2\Lingva.BusinessLayer.UnitTest.runtimeconfig.dev.json
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.BusinessLayer.UnitTest\bin\Debug\netcoreapp2.2\Lingva.BusinessLayer.UnitTest.dll
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.BusinessLayer.UnitTest\bin\Debug\netcoreapp2.2\Lingva.BusinessLayer.UnitTest.pdb
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.BusinessLayer.UnitTest\obj\Debug\netcoreapp2.2\Lingva.BusinessLayer.UnitTest.csprojAssemblyReference.cache
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.BusinessLayer.UnitTest\obj\Debug\netcoreapp2.2\Lingva.BusinessLayer.UnitTest.csproj.CoreCompileInputs.cache
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.BusinessLayer.UnitTest\obj\Debug\netcoreapp2.2\Lingva.BusinessLayer.UnitTest.AssemblyInfoInputs.cache
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.BusinessLayer.UnitTest\obj\Debug\netcoreapp2.2\Lingva.BusinessLayer.UnitTest.AssemblyInfo.cs
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.BusinessLayer.UnitTest\obj\Debug\netcoreapp2.2\Lingva.BusinessLayer.UnitTest.dll
+E:\.net workspace\SoftServe practice\development\pre-demo\lingvalab\backend\Lingva.BusinessLayer.UnitTest\obj\Debug\netcoreapp2.2\Lingva.BusinessLayer.UnitTest.pdb

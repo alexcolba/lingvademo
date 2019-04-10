@@ -1,0 +1,733 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lingva.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:Lingva.WebAPI.Controllers.DictionaryController.GetDictionary">
+            <summary>
+             Translates words withing choosen services.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <returns>List of Translations</returns>
+            <response code="200">Returns list of translations</response>
+            <response code="404">If the exception is handled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.DictionaryController.GetDictionaryRecord(System.Int32)">
+             <summary>
+             Creates dictionary record.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 Post /Dictionary
+                 {
+                    "Id" : 1
+                    "UserId" : 12
+                    "WordName" : "string"
+                    "Translation" : "translation"
+                    "LanguageName" : "languageName"
+                    "Context" : "context"
+                    "Picture" : "picture"
+                 }
+            
+             </remarks>
+             <param name="dictionaryRecordCreatingDTO">Dictionary record</param>
+             <returns>Status of operation</returns>
+             <response code="200">Returns OK if dictionary record created</response>
+             <response code="404">If the exception handled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.DictionaryController.PostDictionaryRecord(Lingva.WebAPI.Dto.DictionaryRecordCreatingDTO)">
+             <summary>
+             Creates dictionary record.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Dictionary
+                 {
+                    "Id" : 1
+                    "UserId" : 12
+                    "WordName" : "string"
+                    "Translation" : "translation"
+                    "LanguageName" : "languageName"
+                    "Context" : "context"
+                    "Picture" : "picture"
+                 }
+            
+             </remarks>
+             <param name="dictionaryRecordCreatingDTO"></param>
+             <returns>Status of operation</returns>
+             <response code="200">Returns OK if dictionary record created</response>
+             <response code="400">If the exception handled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.DictionaryController.PutDictionaryRecord(System.Int32,Lingva.WebAPI.Dto.DictionaryRecordCreatingDTO)">
+             <summary>
+             Updates dictionary record.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /Dictionary{id}
+                 {
+                    "Id" : 1
+                    "UserId" : 12
+                    "WordName" : "string"
+                    "Translation" : "translation"
+                    "LanguageName" : "languageName"
+                    "Context" : "context"
+                    "Picture" : "picture"
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <param name="dictionaryRecordCreatingDTO"></param>
+             <returns>Status of opertion</returns>
+             <response code="200">Returns OK if dictionary record updated</response>
+             <response code="400">If the exception handled</response>       
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.DictionaryController.DeleteDictionaryRecord(System.Int32)">
+             <summary>
+             Deletes record from dictionary.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE /Dictionary
+                 {
+                    "id": 1
+                 }
+            
+             </remarks>
+             <response code="200">Returns the newly created item</response>
+             <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.GroupCollectionController.GetGroupsList">
+            <summary>
+            Returns group list
+            </summary>
+            <remarks>
+            
+                GET: api/groupcollection
+                 
+            </remarks>
+            <returns></returns>
+            <response code="200">Returns OK if dictionary record updated</response>
+            <response code="400">If the exception handled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.GroupCollectionController.GetGroupByTitle(System.String)">
+            <summary>
+            Return info about chosen group
+            </summary>
+            <remarks>
+            
+                GET: api/groupcollection/{title}
+            
+            </remarks>
+            <param name="title"></param>
+            <returns>Group info</returns>
+            <response code="200">Returns OK and group Dto</response>
+            <response code="400">If model state is not valid</response> 
+            <response code="404">If the group is null</response>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.GroupCollectionController.PostGroup(Lingva.WebAPI.Dto.GroupCreatingDTO)">
+            <summary>
+            Creates new group
+            </summary>
+            <remarks>
+            
+                POST: groupcollection
+                
+            Sample request
+                    {
+                        "Title" : "title"
+                        "Desciption" : "descrioption"
+                        "FilmId" : "filmId"
+                        "Picture" : "picture"
+                    }
+            </remarks>
+            <param name="groupCreatingDTO"></param>
+            <returns>Status and group info if created</returns>
+            <response code="200">Returns OK if created and group Dto</response>
+            <response code="400">If exception is handled</response>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.GroupCollectionController.PutGroup(System.Int32,Lingva.WebAPI.Dto.GroupCreatingDTO)">
+            <summary>
+            Updates gruop info by chosen id
+            </summary>
+            <remarks>
+                PUT: groupcollection/{id}
+                
+            Sample request
+                    {
+                        "Title" : "title"
+                        "Desciption" : "descrioption"
+                        "FilmId" : "filmId"
+                        "Picture" : "picture"
+                    }
+            </remarks>
+            <param name="id"></param>
+            <param name="groupCreatingDTO"></param>
+            <returns>Status of operation</returns>
+            <response code="200">Returns OK if group updated</response>
+            <response code="400">If the exception handled</response>  
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.GroupCollectionController.DeleteGroup(System.Int32)">
+            <summary>
+            Deletes chosen group 
+            </summary>
+            <remarks>
+                
+                DELETE: groupcollection/{id}
+                    
+            </remarks>
+            <param name="id"></param>
+            <returns>Status</returns>
+            <response code="200">Returns OK if deleted</response>
+            <response code="400">If exception is hendled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.LivesearchController.GetTranslation(System.String,System.Int32)">
+            <summary>
+                Livesearch by chosen substring
+            </summary>
+            <remarks>
+            
+                GET: Livesearch/{substring}/{qantityOfResult}
+            
+            </remarks>
+            <param name="substring">Searched substring</param>
+            <param name="qantityOfResult">Wished qantity</param>
+            <returns>Search results</returns>
+            <response code="200">Returns OK and search results</response>
+            <response code="400">If model state is not valid</response> 
+            <response code="404">If nothing was found</response>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.MembershipController.JoinGroup(System.Int32)">
+             <summary>
+             Joins user into group.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST Membership/join/{groupID}
+                 {
+                    "Id" : 1
+                    "FirstName" : string
+                    "LastName" : string
+                    "Username" : string
+                    "Token" : string
+                 }
+            
+             </remarks> 
+             <param name="groupID">Id of group to join</param>        
+             <returns>Joining complete status</returns>
+             <response code="200">Returns Ok status</response>
+             <response code="404">If the exception handled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.MembershipController.LeaveGroup(System.Int32)">
+             <summary>
+             Deletes user from group.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE membership/leave/{groupID}
+                 {
+                    "Id" : 1
+                    "FirstName" : string
+                    "LastName" : string
+                    "Username" : string
+                    "Token" : string
+                 }
+            
+             </remarks>      
+             <returns>Leaving complete</returns>
+             <param name="groupID">Id of group to leave</param> 
+             <response code="200">Returns status</response>
+             <response code="404">If the exception is handled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.MovieController.GetMoviesList">
+            <summary>
+            Returns list of avaliable movies
+            </summary>
+            <remarks>
+            
+                GET: /movie    
+            
+            </remarks>
+            <returns>List of movies</returns>
+            <response code="200">Returns OK and list of movies</response>
+            <response code="400">If exception is hendled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.MovieController.GetMovie(System.Int32)">
+            <summary>
+            Returns chosen movie
+            </summary>
+            <remarks>
+                
+                GET: movie/{id}
+            
+            </remarks>
+            <param name="id">id of chosen movie</param>
+            <returns>Chosen movie  Dto</returns>
+            <response code="200">Returns OK if deleted</response>
+            <response code="400">If model state is not valid</response> 
+            <response code="404">If no movie for this id</response>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.MovieController.PostGroup(Lingva.WebAPI.Dto.FilmCreatingDTO)">
+            <summary>
+            Creates Movie
+            </summary>
+            <remarks>
+            
+                POST: movie/
+                
+            Sample request:
+                {
+                    "Title" : "title"
+                    "Description" : "description"
+                    "SubtitleId" : "subtitleId"
+                    "Poster" : "poster"
+                }
+            
+            </remarks>
+            <param name="movieCreatingDTO">New movie info</param>
+            <returns>Status and movie Dto</returns>
+            <response code="200">Returns OK and movie Dto</response>
+            <response code="400">If model state is not valid or exception hadled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.MovieController.PutMovie(System.Int32,Lingva.WebAPI.Dto.FilmCreatingDTO)">
+            <summary>
+            Updates Movie info
+            </summary>
+            <remarks>
+            
+                PUT: movie/
+                
+            Sample request:
+                {
+                    "Title" : "title"
+                    "Description" : "description"
+                    "SubtitleId" : "subtitleId"
+                    "Poster" : "poster"
+                }
+            
+            </remarks>
+            <param name="id">id of movie to update</param>
+            <param name="movieCreatingDTO">New movie info</param>
+            <returns>Status and movie Dto</returns>
+            <response code="200">Returns OK and movie Dto</response>
+            <response code="400">If model state is not valid or exception hadled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.MovieController.DeleteMovie(System.Int32)">
+            <summary>
+            Deletes chosen movie
+            </summary>
+            <remarks>
+            
+                DELETE: movie/{id}
+            
+            </remarks>
+            <param name="id">id of movie to delete</param>
+            <returns>Status</returns>
+            <response code="200">Returns OK</response>
+            <response code="400">If model state is not valid or exception hadled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.ParserWordsController.GetParserWord(System.String)">
+             <summary>
+             Returns parsed words.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /ParserWords/{name}
+                 { }
+            
+             </remarks>
+             <param name="name">Word to parse</param>
+             <returns>Parsed words</returns>
+             <response code="200">Returns the parsed words</response>
+             <response code="400">If model state is not valid</response> 
+             <response code="404">If the exception handled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.ParserWordsController.GetAllParserWords">
+             <summary>
+             Returns all parsed words.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /ParserWords
+                 { }
+            
+             </remarks>
+             <response code="200">Returns the parsed words</response>
+             <response code="400">If the exception handled</response> 
+             <response code="404">No founded words</response>
+             <returns></returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.ParserWordsController.PutInsertOrUpdateParserWord(Lingva.WebAPI.Dto.ParserWordDTO)">
+            <summary>
+             Updates dictionary record.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 Post /ParserWords
+                 {        
+                    "Name" : "string"
+                    "LanguageName" : "languageName"
+                    "SubtitleRowId" : 132
+                 }
+            
+             </remarks>
+             <param name="word"></param>
+             <response code="200">Returns OK if parser word updated</response>
+             <response code="400">If model state is not valid</response>
+             <response code="404">If the exception handled</response>
+             <returns>Parsed words Dto</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.ParserWordsController.AddParserWordsFromRow(Lingva.WebAPI.Dto.SubtitleRowDTO)">
+             <summary>
+             Creates parsed words from requested row.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 Post /ParserWords
+                 {
+                    "Id" : 1
+                    "Value" : "string"
+                    "LanguageName" : "languageName"
+                    "SubtitleId" : 135
+                 }
+            
+             </remarks>
+             <response code="201">Returns OK if created</response>
+             <response code="400">If model state is not valid</response> 
+             <response code="404">If the exception handled</response> 
+             <param name="rowDto">Row for parsing</param>
+             <returns>Status and parsed words</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.ParserWordsController.AddParserWord(Lingva.WebAPI.Dto.ParserWordDTO)">
+             <summary>
+             Creates parsed words.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 Post /ParserWords
+                 {
+                     "Name" : "string"
+                    "LanguageName" : "languageName"
+                    "SubtitleRowId" : 132
+                 }
+            
+             </remarks>
+             <response code="201">Returns OK if created</response>
+             <response code="400">If the exception handled</response> 
+             <param name="word">Word to create</param>
+             <returns>Status and parsed words</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.ParserWordsController.DeleteParserWord(System.String)">
+             <summary>
+             Deletes record from dictionary.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE /ParserWords/{name}
+                 { }
+            
+             </remarks>
+             <response code="200">Returns OK if deleted</response>
+             <response code="400">If exception is hendled</response> 
+             <param name="name">Word to delete</param>
+             <returns>Status of operation</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.StatisticsController.GetUserStatistic(System.Int32)">
+            <summary>
+            Returns groups of requested user
+            </summary>
+            <remarks>
+            
+                GET: Statics/user/{id}/groups
+            
+            </remarks>
+            <param name="userId">Id of requested user</param>
+            <response code="200">Returns status and user`s groups</response>
+            <response code="404">If the exception is handled</response>
+            <returns></returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.StatisticsController.GetGroupUsers(System.Int32)">
+            <summary>
+            Returns user in requested group
+            </summary>
+            <remarks>
+            
+                GET: Statics/groups/{id}/users
+            
+            </remarks>
+            <param name="groupId">Id of requested group</param>
+            <response code="200">Returns status and users in group</response>
+            <response code="404">If the exception is handled</response>
+            <returns>Users in requested group</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.SubtitlesHandlerController.GetSubtitleById(System.Int32)">
+             <summary>
+             Getting subtitles by ID.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /subltitle/{id}
+                 { }
+            
+             </remarks>
+             <returns>Subtitles</returns>
+             <response code="200">Returns subtitles</response>
+             <response code="404">If the exception is handled</response> 
+             <param name="id">id of needed subtitles</param>
+             <returns>Subtitles by requested id</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.SubtitlesHandlerController.GetSubtitleByPath(System.String)">
+             <summary>
+             Getting subtitles by path.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /subltitle/path
+                 { 
+                     "Path" : "string"
+                     "FilmId" : 123
+                     "LanguageName" : "language"
+                 }
+            
+             </remarks>
+             <returns>Subtitles</returns>
+             <response code="200">Returns subtitles from path</response>
+             <response code="404">If the exception is handled</response> 
+             <param name="path"></param>
+             <returns>Returns subtitle from chosen path</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.SubtitlesHandlerController.AddSubtitle(Lingva.WebAPI.Dto.SubtitleDTO)">
+             <summary>
+             Adding subtitles into database.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /subtitle/add
+                  { 
+                     "Path" : "string"
+                     "FilmId" : 123
+                     "LanguageName" : "language"
+                 }
+            
+             </remarks>
+             <returns>Sutiltle adding complete</returns>
+             <response code="200">Returns status</response>
+             <response code="404">If the exception is handled</response> 
+             <param name="subtitleDto"></param>
+             <returns>Status and added subtitles</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.SubtitlesHandlerController.PostParse(Lingva.WebAPI.Dto.SubtitleDTO)">
+             <summary>
+             Parsing subtitles.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /subtitle/parse
+                  { 
+                     "Path" : "string"
+                     "FilmId" : 123
+                     "LanguageName" : "language"
+                 }
+            
+             </remarks>
+             <returns>Parsing complete</returns>
+             <response code="200">Returns status</response>
+             <response code="404">If the exception is handled</response>
+             <param name="subtitleDto"></param>
+             <returns>Status</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.TranslaterController.GetTranslation(Lingva.BusinessLayer.Models.Enums.TranslaterServices,System.String,System.String,System.String)">
+            <summary>
+            Translates words withing choosen services.
+            </summary>
+            <remarks>
+            
+                GET: {serviceId}/{text}/{originalLanguage}/{translationLanguage}
+            
+            Returns one translation.
+            
+            </remarks>
+            <param name="serviceId">Id of service to translate</param>
+            <param name="text">Text to translate</param>
+            <param name="originalLanguage">Original language</param>
+            <param name="translationLanguage">TranslationLanguage</param>
+            <returns>Translation of text</returns>
+            <response code="200">Returns status and translation</response>
+            <response code="400">If model state is not valid</response> 
+            <response code="404">If the exception is handled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.TranslaterController.GetTranslationVariants(Lingva.BusinessLayer.Models.Enums.TranslaterServices,System.String,System.String,System.String)">
+            <summary>
+            Translates words withing choosen services. Returns several variants of translation.
+            </summary>
+            <remarks>
+            
+                GET: list/{serviceId}/{text}/{originalLanguage}/{translationLanguage}
+            
+            Returns list of translations.
+            
+            </remarks>
+            <param name="serviceId">Id of service to translate</param>
+            <param name="text">Text to translate</param>
+            <param name="originalLanguage">Original language</param>
+            <param name="translationLanguage">TranslationLanguage</param>
+            <returns>List of translations</returns>
+            <response code="200">Returns status and translation</response>
+            <response code="400">If model state is not valid</response> 
+            <response code="404">If the exception is handled</response> 
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.UsersController.Authenticate(Lingva.WebAPI.Dto.SignUpUserDto)">
+             <summary>
+             Authenticates user.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /users/authenticate
+                 {
+                    "Id" : 1
+                    "FirstName" : "firstName"
+                    "LastName" : "lastName"
+                    "UserName" : "userName"
+                    "Password" : "password"
+                 }
+            
+             </remarks>
+             <response code="200">Returns OK if user authenticated</response>
+             <param name="userDto">Info </param>
+             <returns>Signed in user info</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.UsersController.Register(Lingva.WebAPI.Dto.SignUpUserDto)">
+             <summary>
+             Signs up user.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /users/register
+                 {
+                    "Id" : 1
+                    "FirstName" : "string"
+                    "LastName" : "translation"
+                    "UserName" : "languageName"
+                    "Password" : "password"
+                 }
+            
+             </remarks>
+             <response code="200">Returns OK if user signed up</response>
+             <response code="404">If the exception handled</response>
+             <param name="userDto"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.UsersController.GetAll">
+             <summary>
+             Returns list of users.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /Users
+                 { }
+            
+             </remarks>
+             <response code="200">Returns the users list</response>
+             <response code="404">If the exception handled</response> 
+             <returns>List of users</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.UsersController.GetById(System.Int32)">
+             <summary>
+             Returns User.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /Users/{id}
+                 { }
+            
+             </remarks>
+             <response code="200">Returns the user</response>
+             <response code="404">If the exception handled</response>
+             <param name="id">id of requested user</param>
+             <returns>Returns user info as user Dto</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.UsersController.GetMyInfo">
+             <summary>
+             Returns User.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /Users/me
+                 { }
+            
+             </remarks>
+             <response code="200">Returns the user</response>
+             <response code="404">If the exception handled</response>
+             <returns>Info of requested user as user Dto</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.UsersController.Update(Lingva.WebAPI.Dto.SignUpUserDto)">
+             <summary>
+             Updates user info.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /Dictionary
+                 {
+                    "Id" : 1
+                    "FirstName" : "string"
+                    "LastName" : "translation"
+                    "UserName" : "languageName"
+                    "Password" : "password"
+                 }
+            
+             </remarks>
+             <response code="200">Returns OK if user info updated</response>
+             <response code="404">If the exception handled</response> 
+             <param name="userDto"></param>
+             <returns>Status of operation</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Controllers.UsersController.Delete(System.Int32)">
+             <summary>
+             Deletes user by Id.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE Users/{id}
+                 { }
+            
+             </remarks>
+             <response code="200">Returns OK if deleted</response>
+             <response code="404">If exception is hendled</response> 
+             <param name="id"></param>
+             <returns>Status of operation</returns>
+        </member>
+        <member name="M:Lingva.WebAPI.Extensions.StringExtensions.GetVariableName(System.String)">
+            <summary>
+            Gets the name of the variable form pattern ${MyVariable}
+            </summary>
+            <returns>The variable name. Example, MyVariable</returns>
+            <param name="interpolatedVariable">Interpolated variable.</param>
+        </member>
+    </members>
+</doc>
